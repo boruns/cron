@@ -1,0 +1,37 @@
+#setting-dev.yaml
+name: "crontab"
+port: 8082
+logsAddress: "./logs/"
+locale: "zh"
+
+mysql:
+  username: "root"
+  password: "root"
+  host: "127.0.0.1"
+  port: 3306
+  dbName: "cron"
+
+redis:
+  host: "127.0.0.1"
+  port: 6379 
+  db: 0
+  password: ""
+
+etcd:
+  hosts: 
+  - "127.0.0.1:2379"
+  dialTimeout: 5000 #毫秒
+
+jwt:
+  key: "D3Lu9XDK5erwy4eO39MgktgR2zV2ih72a0RnT6zXOpW9E4dSb0WcyECi37NOpqWa"
+
+#该处暂不使用
+minio:
+  access_key: "KW2M7WY92L4VJ7D0O1E2"
+  secret_key: "3ZDoY0SeWELeljEJcIz0qoA+kKfCLf1GWHYo4qrk"
+
+mongodb:
+  url: "mongodb://127.0.0.1:27017"
+  timeout: 5000
+  database: "cron"
+  collect: "jobs"

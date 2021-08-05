@@ -1,0 +1,4 @@
+vendor
+setting-dev.yaml
+logs/*
+.vscode
